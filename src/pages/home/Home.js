@@ -13,7 +13,7 @@ const Home = () => {
     useEffect(() => {
         const getData = async () => {
             const res = await fetch(
-                `https://randomuser.me/api/?page=1&results=8`
+                `https://randomuser.me/api/?page=1&results=16`
             );
             const data = await res.json();
             setItems(data.results);
@@ -24,7 +24,7 @@ const Home = () => {
 
     const getData = async () => {
         const res = await fetch(
-            `https://randomuser.me/api/?page=${page}&results=8`
+            `https://randomuser.me/api/?page=${page}&results=16`
         );
         const data = await res.json();
         return data.results;
@@ -34,7 +34,7 @@ const Home = () => {
         const dataFromServer = await getData();
 
         setItems([...items, ...dataFromServer]);
-        if (dataFromServer.length === 0 || dataFromServer.length < 8) {
+        if (dataFromServer.length === 0 || dataFromServer.length < 16) {
             sethasMore(false);
         }
         setpage(page + 1);
