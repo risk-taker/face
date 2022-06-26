@@ -1,0 +1,15 @@
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  align-items: center;
+  color: #635b5b;
+}
+
+.imgCircle {
+  border-radius: 50%;
+}
+
+.space {
+  width: 3px;
+}

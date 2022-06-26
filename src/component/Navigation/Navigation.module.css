@@ -1,0 +1,11 @@
+.wrapper {
+  margin-top: 12px;
+}
+.btn {
+  text-decoration: none;
+  padding: 8px;
+  background-color: #a8a8a8;
+  border-radius: 3px;
+  color: white;
+  margin-right: 30px;
+}
